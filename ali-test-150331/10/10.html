@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#botton {
+			background: url(TB1zTK5HpXXXXc_XFXX7tu04pXX-116-158.png) no-repeat 0px -80px;
+			height: 80px;
+			width: 120px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="botton" onclick="bottonClick();">
+	</div>
+	
+	<script>
+bottonObj = document.getElementById("botton");
+bottonObj.setAttribute("data","ture");
+function bottonClick(){
+bottonTure = bottonObj.getAttribute("data");
+if(bottonTure=="ture")
+{
+	bottonObj.setAttribute("data","false");
+	bottonObj.style.cssText = "background-position: 0px -80px";
+}
+if(bottonTure=="false")
+{
+	bottonObj.setAttribute("data","ture");
+	bottonObj.style.cssText = "background-position: 0px 0px";
+}
+}
+	</script>
+</body>
+</html>
